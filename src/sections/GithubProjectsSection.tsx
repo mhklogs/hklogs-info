@@ -1,40 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Github, ExternalLink, Sparkles, AlertCircle, FolderGit, Check, Search, Filter, Layers, LayoutGrid } from 'lucide-react';
+import { Github, ExternalLink, FolderGit, Search, LayoutGrid } from 'lucide-react';
 import { staticProjects, type LocalProject } from '../data/hassaanData';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import MagneticCard from '../components/MagneticCard';
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface GithubProjectsSectionProps {
-  geminiKey: string;
-  setGeminiKey: (key: string) => void;
-  githubToken: string;
-  setGithubToken: (token: string) => void;
   onOpenVault?: () => void;
 }
 
 export default function GithubProjectsSection({
-  geminiKey,
-  setGeminiKey,
-  githubToken,
-  setGithubToken,
   onOpenVault,
 }: GithubProjectsSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
   
-  const [tempGeminiKey, setTempGeminiKey] = useState(geminiKey);
-  const [tempGithubToken, setTempGithubToken] = useState(githubToken);
-  const [saveSuccess, setSaveSuccess] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<LocalProject | null>(null);
-
   // Custom states for refined layout & databank search
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedProject, setSelectedProject] = useState<LocalProject | null>(null);
 
   const getProjectSubtitle = (name: string) => {
     switch (name) {
@@ -92,21 +79,6 @@ export default function GithubProjectsSection({
 
     return true;
   });
-
-  useEffect(() => {
-    setTempGeminiKey(geminiKey);
-    setTempGithubToken(githubToken);
-  }, [geminiKey, githubToken]);
-
-  const handleSaveKeys = (e: React.FormEvent) => {
-    e.preventDefault();
-    setGeminiKey(tempGeminiKey);
-    setGithubToken(tempGithubToken);
-    localStorage.setItem('GEMINI_API_KEY', tempGeminiKey);
-    localStorage.setItem('GITHUB_TOKEN', tempGithubToken);
-    setSaveSuccess(true);
-    setTimeout(() => setSaveSuccess(false), 2000);
-  };
 
   // GSAP 3D Scroll Trigger effect
   useEffect(() => {

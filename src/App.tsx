@@ -30,7 +30,6 @@ function App() {
 
   // Read credentials from localStorage
   const [geminiKey, setGeminiKey] = useState(() => localStorage.getItem('GEMINI_API_KEY') || '');
-  const [githubToken, setGithubToken] = useState(() => localStorage.getItem('GITHUB_TOKEN') || '');
 
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -204,10 +203,6 @@ function App() {
         {/* 3. Engineered Architectures & Projects */}
         <section id="projects" className="relative z-20">
           <GithubProjectsSection
-            geminiKey={geminiKey}
-            setGeminiKey={setGeminiKey}
-            githubToken={githubToken}
-            setGithubToken={setGithubToken}
             onOpenVault={navigateToVault}
           />
         </section>

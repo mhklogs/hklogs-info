@@ -10,7 +10,6 @@ import {
 } from 'lucide-react';
 import { personalInfo, linkedinSkillsList, detailedCourses } from '../data/hassaanData';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import MagneticCard from '../components/MagneticCard';
 
 gsap.registerPlugin(ScrollTrigger);
 

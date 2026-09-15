@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookOpen, GraduationCap, X } from 'lucide-react';
+import { BookOpen, GraduationCap } from 'lucide-react';
 import { detailedCourses } from '../data/hassaanData';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 

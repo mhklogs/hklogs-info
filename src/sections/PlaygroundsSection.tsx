@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Laptop, AlertTriangle, CheckCircle2, RotateCcw, Bug, Play, Copy, Terminal, Loader2 } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, RotateCcw, Bug, Play, Copy, Terminal, Loader2 } from 'lucide-react';
 
 interface PlaygroundsSectionProps {
   geminiKey: string;
@@ -121,9 +121,10 @@ Structure your response into the following clear sections:
         } else {
           setGeneratedResult("No response text returned from Gemini API.");
         }
-      } catch (err: any) {
+      } catch (err: unknown) {
+        const errorMessage = err instanceof Error ? err.message : 'Verification fail.';
         console.error("Gemini SQA Generation Error:", err);
-        setGeneratedResult(`Error contacting Gemini API: ${err.message || 'Verification fail.'}. Running in local simulation mode instead.`);
+        setGeneratedResult(`Error contacting Gemini API: ${errorMessage}. Running in local simulation mode instead.`);
         setTimeout(() => simulateLocalPlan(featureStr), 1500);
       } finally {
         setIsGenerating(false);

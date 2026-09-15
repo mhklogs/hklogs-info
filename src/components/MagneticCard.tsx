@@ -23,7 +23,6 @@ export default function MagneticCard({
   const cardRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0.5, y: 0.5 });
   const [glowPosition, setGlowPosition] = useState({ x: 50, y: 50 });
   const rafRef = useRef<number | null>(null);
 
@@ -34,7 +33,6 @@ export default function MagneticCard({
     const x = (e.clientX - rect.left) / rect.width;
     const y = (e.clientY - rect.top) / rect.height;
 
-    setMousePosition({ x, y });
     setGlowPosition({ x: x * 100, y: y * 100 });
 
     if (rafRef.current) cancelAnimationFrame(rafRef.current);

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, FolderGit, Github, ExternalLink, ArrowLeft, List, LayoutGrid, CheckCircle2 } from 'lucide-react';
+import { Search, FolderGit, Github, ExternalLink, ArrowLeft, List, LayoutGrid } from 'lucide-react';
 import { staticProjects, type LocalProject } from '../data/hassaanData';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 

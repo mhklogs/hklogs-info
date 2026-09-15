@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { personalInfo } from '../data/hassaanData';
 
 interface HeroSectionProps {
@@ -7,7 +7,6 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ onExploreProjects }: HeroSectionProps) {
-  const [showHireOptions, setShowHireOptions] = useState(false);
 
   const handleExplore = (e: React.MouseEvent) => {
     e.preventDefault();
