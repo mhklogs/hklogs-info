@@ -14,7 +14,7 @@ interface ChatbotSectionProps {
   onClose: () => void;
 }
 
-const PERMANENT_GEMINI_KEY = import.meta.env.VITE_GEMINI_API_KEY || (typeof window !== 'undefined' ? atob("QVEuQWI4Uk42SndaYTBtNEV5ZkVBWVI1RW1PTWhmbXYyZm5XRV9pd2FpalVILVI3dzRMTGc=") : "");
+const PERMANENT_GEMINI_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 
 // Helper component to cleanly format Markdown: bold, italic, code, links, lists, and headings — no raw ** / []( / backticks shown
 function FormattedMessageText({ text }: { text: string }) {
@@ -287,6 +287,15 @@ export default function ChatbotSection({ geminiKey, isOpen, onClose }: ChatbotSe
     setChatMessages(prev => [...prev, { sender: 'user', text: userMsg }]);
     setChatInput('');
     setIsTyping(true);
+
+    if (!activeKey) {
+      setIsTyping(false);
+      setChatMessages(prev => [...prev, {
+        sender: 'bot',
+        text: "Chat is currently offline (assistant not configured). Please email hassaan directly — I'll respond as soon as possible."
+      }]);
+      return;
+    }
 
     try {
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${activeKey}`, {
