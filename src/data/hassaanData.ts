@@ -220,6 +220,26 @@ name: "Home. Primus Leads",
     working: "Processes homeowner service requests, validates ZIP code coverage, routes lead criteria to verified contractors, and schedules consultation bookings."
   },
   {
+name: "Revenue Orbit Marketing (ROM)",
+    desc: "Official growth partner website for ROM — Revenue Orbit Marketing. A marketing, sales, outsourcing, AI, and automation agency platform with an animated orbit hero, growth lifecycle framework, case studies, pricing, and a consultation form wired to Supabase.",
+    url: "https://github.com/mhklogs/revenue-orbit-marketing",
+    vercelUrl: "https://revenueorbitmarketing.com",
+    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Supabase"],
+    thumbnail: "/revenue_orbit_thumb.jpg",
+    usecase: "Helps businesses generate customers and accelerate revenue through integrated marketing, sales, outsourcing, and AI automation services.",
+    working: "Uses Next.js App Router with Framer Motion orbit visuals, captures consultation leads via server actions into Supabase, and includes full SEO meta/OG/JSON-LD branding with a TrustedForm consent capture."
+  },
+  {
+name: "Accident Care Helpline (Accident Case Win)",
+    desc: "A production-ready personal-injury lead generation platform. Features SEO landing pages per case type and state, multi-user admin dashboard with per-account lead attribution, crash-safe atomic JSON storage, and full ActiveProspect TrustedForm consent-certificate integration.",
+    url: "https://github.com/hklogs/Accidental-Case-Win-Project",
+    vercelUrl: "https://accidentcarehelpline.com",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "ActiveProspect", "Supabase"],
+    thumbnail: "/accident_case_win_thumb.jpg",
+    usecase: "Connects accident injury victims with personal injury attorneys through free case reviews, maximizing conversion via verified consent capture.",
+    working: "Serves auto-generated sitemap/robots with self-referencing canonicals and JSON-LD, captures leads with TrustedForm consent certificates, and routes them to an admin dashboard for attorney follow-up."
+  },
+  {
 name: "Primus Leads LLC",
     desc: "Enterprise administrative dashboard managing homeowner-contractor connections, subscription tiers, and payout ledgers.",
     url: "https://github.com/hklogs/referral-close-llc",
@@ -280,14 +300,14 @@ name: "sentient-ai-multimodal-hub",
     working: "Handles media streams using the Web Audio API and Canvas API, packaging visual or audio data into base64 blocks. Transmits these blocks to Google Gemini Pro API nodes to receive real-time, interactive feedback inside a retro CSS-styled terminal."
   },
   {
-name: "ishaara-sign-language-translator",
-    desc: "A real-time translation application built for hearing-impaired students and educators. Utilizing computer vision and convolutional neural networks, it captures hand gesture coords from webcams and translates Pakistani Sign Language (PSL) into speech waves and readable Urdu text labels.",
+name: "ISHAARA — Bi-Directional Sign Language Translator",
+    desc: "The first open-source bi-directional sign language translator supporting Pakistani Sign Language (PSL) and Indian Sign Language (ISL). It converts sign to speech via on-device holistic landmark tracking and speech to sign through a procedural 3D avatar that signs back in real time — with English, Urdu, and Hindi support and zero GPU or cloud dependency.",
     url: "https://github.com/hklogs/ishaara-sign-language-translator",
-    vercelUrl: "https://react-sign-language-workspace.vercel.app",
-    tech: ["React", "TensorFlow.js", "OpenCV", "MediaPipe"],
+    vercelUrl: "https://ishaara-sign-language-translator.vercel.app",
+    tech: ["React", "MediaPipe Holistic", "Web Workers", "3D Avatar", "TTS"],
     thumbnail: "/sign_language_thumb.jpg",
-    usecase: "Bridges the communication gap in classrooms for hearing-impaired students, converting physical gestures to audible Urdu and text.",
-    working: "Reads webcam frame inputs via OpenCV, tracks hand landmarks using MediaPipe, feeds coordinates to a client-side TensorFlow.js model, and plays translated audio speech fragments."
+    usecase: "Bridges the communication gap for hearing-impaired students and educators, converting physical gestures to audible speech and text, and rendering signed responses live on-screen.",
+    working: "Tracks 543 holistic landmarks per webcam frame via MediaPipe, runs sliding-window inference (24 frames) inside a Web Worker with a BigMLP/GRU classifier, and drives browser TTS for sign-to-speech plus a real-time 3D avatar for speech-to-sign gloss rendering."
   },
   {
 name: "Bridgebot Code Migrator",
@@ -509,7 +529,7 @@ PORTFOLIO FACTS YOU CAN SHARE:
 - Hassaan is an AI Engineer & SQA Specialist in his final year of BS Software Engineering at UIIT PMAS-Arid Agriculture University, Pakistan. He runs Recruiter AI.
 - Specialties: Software Quality Assurance, automated & manual testing, agentic AI systems, and GenAI/LLM integration.
 - Stats: 26+ verified codebases, 50+ QA audits & builds, 4+ Medium publications, 4+ years dev track.
-- Key projects: CBO-RuralWSD (offline-first PWA for rural water billing), ReferralClose LLC & home.referralclose, Primus Leads, ai-recruitment-auditor (Gemini resume screening), sentient-ai-multimodal-hub, ishaara sign-language translator, Bridgebot code migrator, Relevnt (legal compliance search), PocketMint, Prioriti, geoengineai, AI Podcast Agent (LangGraph), optimared pricing agent, AppointmentBookingApp, GetAuto, and more.
+- Key projects: Revenue Orbit Marketing (revenueorbitmarketing.com), Accident Care Helpline (accidentcarehelpline.com — personal-injury lead gen with TrustedForm), ISHAARA (bi-directional sign language translator), CBO-RuralWSD (offline-first PWA for rural water billing), ReferralClose LLC & home.referralclose, Primus Leads, ai-recruitment-auditor (Gemini resume screening), sentient-ai-multimodal-hub, Bridgebot code migrator, Relevnt (legal compliance search), PocketMint, Prioriti, geoengineai, AI Podcast Agent (LangGraph), optimared pricing agent, AppointmentBookingApp, GetAuto, and more.
 - Medium publications cover: automating podcasts with Gemini & LangGraph, algorithmic exam seating, shifting SQA from assertions to inference with Vertex AI, and enforcing feature parity.
 - Tools & stack: Python, TypeScript, Java, C++, Kotlin, React, Next.js, Gemini/Vertex AI, LangGraph, LangChain, TensorFlow, OpenCV, Supabase, Firebase, PostgreSQL, Tailwind.
 

@@ -89,3 +89,4 @@ out/
 
 # vercel
 .vercel
+.env*
