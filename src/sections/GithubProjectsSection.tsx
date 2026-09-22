@@ -29,8 +29,10 @@ export default function GithubProjectsSection({
         return "ENTERPRISE LEAD-ROUTING PORTAL";
       case "home.referralclose":
         return "HOME SERVICE MARKETPLACE";
-      case "Home. Primus Leads":
-        return "LEAD GENERATION PLATFORM";
+      case "FixIt Home":
+        return "HOME SERVICES MARKETPLACE";
+      case "HomeFix OS":
+        return "MANAGED CALL-CENTER & PAY-PER-CALL NETWORK";
       default:
         return "SOFTWARE CODEBASE / SYSTEM INTEGRATION";
     }

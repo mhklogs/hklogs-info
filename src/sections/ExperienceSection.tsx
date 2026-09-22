@@ -95,24 +95,8 @@ export default function ExperienceSection() {
 
               {/* Step 02 */}
               <div className="relative group text-left space-y-2">
-                <div className="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#0D0D0D] border-2 border-[#E50914] text-[#E50914] group-hover:bg-[#E50914] group-hover:text-white flex items-center justify-center font-mono text-xs font-bold transition-colors">
-                  02
-                </div>
-                <span className="text-[10px] font-mono text-[#E50914] uppercase tracking-widest font-bold block">
-                  June 2026 - Present
-                </span>
-                <h4 className="font-heading font-bold text-white text-xl leading-snug uppercase group-hover:text-[#E50914] transition-colors">
-                  Executive Member - R&amp;D @ Primus Leads LLC
-                </h4>
-                <p className="text-xs text-[#A1A1AA] leading-relaxed font-light font-sans">
-                  Conducting R&amp;D on automated lead generation algorithms, database scraping data pipelines, and integrating AI outreach platforms for business scaling.
-                </p>
-              </div>
-
-              {/* Step 03 */}
-              <div className="relative group text-left space-y-2">
                 <div className="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#0D0D0D] border-2 border-neutral-700 text-neutral-400 group-hover:border-[#E50914] group-hover:text-[#E50914] flex items-center justify-center font-mono text-xs font-bold transition-colors">
-                  03
+                  02
                 </div>
                 <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest font-bold block">
                   Sept 2024 - Feb 2025
