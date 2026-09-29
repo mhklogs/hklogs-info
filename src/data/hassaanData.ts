@@ -82,7 +82,7 @@ export const detailedCourses: CourseItem[] = [
 
 export const statsList = [
   { value: "50+", label: "QA Audits & Builds" },
-  { value: "45+", label: "GitHub Repositories" },
+  { value: "70+", label: "GitHub Repositories" },
   { value: "4+", label: "Years Dev Track" },
   { value: "4+", label: "Published Essays" }
 ];
@@ -840,7 +840,7 @@ SCOPE RULES:
 PORTFOLIO FACTS YOU CAN SHARE:
 - Hassaan is an AI Engineer & SQA Specialist in his final year of BS Software Engineering at UIIT PMAS-Arid Agriculture University, Pakistan. He runs Recruiter AI.
 - Specialties: Software Quality Assurance, automated & manual testing, agentic AI systems, and GenAI/LLM integration.
-- Stats: 26+ verified codebases, 50+ QA audits & builds, 4+ Medium publications, 4+ years dev track.
+- Stats: 70+ GitHub repositories (29 public · 41 private), 50+ QA audits & builds, 4+ Medium publications, 4+ years dev track.
 - Key projects: Revenue Orbit Marketing (revenueorbitmarketing.com), Accident Care Helpline (accidentcarehelpline.com — personal-injury lead gen with TrustedForm), ISHAARA (bi-directional sign language translator), CBO-RuralWSD (offline-first PWA for rural water billing), ReferralClose LLC & home.referralclose, ai-recruitment-auditor (Gemini resume screening), sentient-ai-multimodal-hub, Bridgebot code migrator, Relevnt (legal compliance search), PocketMint, Prioriti, geoengineai, AI Podcast Agent (LangGraph), optimared pricing agent, Haze Agent Suite (agentic AI control room), FixIt Home & HomeFix OS, AppointmentBookingApp, GetAuto, and more.
 - Medium publications cover: automating podcasts with Gemini & LangGraph, algorithmic exam seating, shifting SQA from assertions to inference with Vertex AI, and enforcing feature parity.
 - Tools & stack: Python, TypeScript, Java, C++, Kotlin, React, Next.js, Gemini/Vertex AI, LangGraph, LangChain, TensorFlow, OpenCV, Supabase, Firebase, PostgreSQL, Tailwind.
