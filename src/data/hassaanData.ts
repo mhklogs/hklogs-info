@@ -774,7 +774,7 @@ name: "UiSpecificationEngine (C-Style to React Transpiler)",
     working: "Front-end concept presenting document/e-sign interaction and estate branding."
   },
   {
-    name: "Yasin Tuck POS Demo",
+    name: "POS — Point of Sales Dashboard",
     desc: "A point-of-sale / intake demo for a retail-outlet workflow — capture, tally, and checkout in one screen.",
     url: "https://github.com/mhklogs/yasin-tuck-pos",
     vercelUrl: "https://yasin-tuck-pos.vercel.app",
