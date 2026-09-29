@@ -189,7 +189,7 @@ export const staticProjects: LocalProject[] = [
     url: "https://github.com/mhklogs/haze-agent-suite",
     vercelUrl: "https://haze-agent-suite.vercel.app",
     tech: ["React", "Vite", "Gemini API", "Tailwind CSS"],
-    thumbnail: "/code_migration_thumb.png",
+    thumbnail: "/haze_agent_thumb.png",
     usecase: "Gives teams a single control room to launch AI research, documentation, automation, and coding agents without switching tools.",
     working: "Orchestrates multiple Gemini 2.x agent nodes behind a Vite SPA, each bound to tool sources (web, files, code) with role-scoped task handlers and streaming outputs."
   },
@@ -199,7 +199,7 @@ export const staticProjects: LocalProject[] = [
     url: "https://github.com/mhklogs/profixit-app",
     vercelUrl: "https://fixit-rouge.vercel.app",
     tech: ["Next.js", "React Native", "Expo", "Supabase", "Stripe", "Tailwind CSS"],
-    thumbnail: "/home_referralclose_new_thumb.png",
+    thumbnail: "/fixit_home_thumb.png",
     usecase: "Powers the self-serve marketplace lane: named-your-price bidding, live ETA quotes, escrow payments, and photo-verified completion payouts for home services.",
     working: "Shares a turbo monorepo across web, mobile (FixIt + ProFixit), admin and a shared packages workspace; syncs the instant-quote engine, chat, and bid wallet across every surface."
   },
@@ -209,7 +209,7 @@ export const staticProjects: LocalProject[] = [
     url: "https://github.com/mhklogs/homefix-os",
     vercelUrl: "https://homefix-os.vercel.app",
     tech: ["React", "Vite", "Express", "SQLite", "Tailwind CSS"],
-    thumbnail: "/home_referralclose_new_thumb.png",
+    thumbnail: "/homefix_os_thumb.png",
     usecase: "Lets homeowners call one number for a live screened appointment and lets contractors pay-per-call for phone-verified leads instead of buying cold lists.",
     working: "Agents process inbound RTP lines, quote fixes, hold deposits in escrow, dispatch vetted pros from the pool, and confirm photo-verified completion before instant contractor payout."
   },
@@ -319,7 +319,7 @@ name: "Bridgebot Code Migrator",
     url: "https://github.com/mhklogs/Bridgebot",
     vercelUrl: "https://code-migration-agent.vercel.app",
     tech: ["React", "Node.js", "Gemini API", "Syntax Trees"],
-    thumbnail: "/code_migration_thumb.jpg",
+    thumbnail: "/bridgebot_thumb.png",
     usecase: "Automates code upgrades from legacy Python 2 or JavaScript files to clean Python 3 or type-safe TypeScript.",
     working: "Parses incoming codebase files into Abstract Syntax Trees (ASTs), flags syntax differences, sends code segments to Gemini API to translate patterns, and outputs clean target files."
   },
@@ -327,7 +327,7 @@ name: "Bridgebot Code Migrator",
 name: "Nexus-fx",
     desc: "A foreign exchange rate analytics dashboard providing live currency updates, visual timeline trends, and price alerts.",
     url: "https://github.com/mhklogs/Nexus-fx",
-    vercelUrl: "https://nexus-fx.vercel.app",
+    vercelUrl: "https://nexusfx-app.vercel.app",
     tech: ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
     thumbnail: "/nexus_fs_new_thumb.png",
     usecase: "Helps currency traders track exchange rates, compare historical performance, and receive notifications when values cross thresholds.",
@@ -349,7 +349,7 @@ name: "support-escalation-hub",
     url: "https://github.com/mhklogs/support-escalation-hub",
     vercelUrl: "https://support-escalation-hub.vercel.app",
     tech: ["TypeScript", "React", "Express", "Node.js"],
-    thumbnail: "/code_migration_thumb.jpg",
+    thumbnail: "/support_escalation_thumb.png",
     usecase: "Allows QA engineers to monitor support escalation routes and verify that system failures trigger notifications.",
     working: "Intercepts error logs from production, maps them to specific ticket levels, and simulates system alerts in a local test suite dashboard."
   },
@@ -518,7 +518,7 @@ name: "UiSpecificationEngine (C-Style to React Transpiler)",
     url: "https://github.com/mhklogs/crazy-closers",
     vercelUrl: "https://crazy-closers.vercel.app",
     tech: ["React", "Node.js", "WebSocket", "Tailwind CSS"],
-    thumbnail: "/crazy_leads_thumb.png",
+    thumbnail: "/crazy_closers_thumb.png",
     usecase: "Helps sales closers prioritize the warmest inbound leads and track call-to-close conversion live.",
     working: "Aggregates inbound prospect signals, scores them by readiness, and streams live call/dispatch events to the closer dashboard."
   },
@@ -537,7 +537,7 @@ name: "UiSpecificationEngine (C-Style to React Transpiler)",
     url: "https://github.com/mhklogs/open-seo",
     vercelUrl: "https://open-seo.vercel.app",
     tech: ["TypeScript", "Next.js", "Gemini API", "Tailwind CSS"],
-    thumbnail: "/revenue_orbit_thumb.jpg",
+    thumbnail: "/open_seo_thumb.png",
     usecase: "Lets marketers generate briefs and optimize pages against search intent at scale.",
     working: "Combines keyword/sERP analysis with Gemini-driven content drafting and on-page SEO scoring."
   },
@@ -576,6 +576,249 @@ name: "UiSpecificationEngine (C-Style to React Transpiler)",
     thumbnail: "/cborural_new_thumb.png",
     usecase: "Extends offline-first consumer billing and tanker tracking to the Saman rural region.",
     working: "Reuses the offline-first service worker and IndexedDB sync pattern with region-specific scheme data."
+  },
+  {
+    name: "Marketing Agent",
+    desc: "A multi-tool marketing agent that turns a brief into a full campaign — research-backed positioning, copy, and asset drafts — with a clean assistant-style workspace.",
+    url: "https://github.com/mhklogs/marketing-agent",
+    vercelUrl: "https://marketing-agent-steel-ten.vercel.app",
+    tech: ["React", "Vite", "Gemini", "Tailwind CSS"],
+    thumbnail: "/auton_ai_new_thumb.png",
+    usecase: "Lets founders and marketers generate campaign drafts and positioning collateral from a single prompt.",
+    working: "Runs a prompt-driven generation loop behind an assistant UI, keeping research and asset drafts in one workspace."
+  },
+  {
+    name: "OTHS — AI Workspace Archive",
+    desc: "A curated archive of AI experiment files and loose agent workspaces, organized and hardened for reuse and handoff.",
+    url: "https://github.com/mhklogs/oths",
+    tech: ["Python", "Notebooks", "Agent Scripts"],
+    thumbnail: "/yuck_fou_thumb.png",
+    usecase: "Preserves reusable AI research and agent snippets so previous work is never lost between projects.",
+    working: "Organizes loose experiment files and agent configs into a version-controlled, documented archive."
+  },
+  {
+    name: "Autohire AI",
+    desc: "An AI recruitment screening assistant that shortlists candidates against a role brief and returns structured-fit reasoning.",
+    url: "https://github.com/mhklogs/autohire-ai",
+    tech: ["Python", "AgentKit", "Gemini"],
+    thumbnail: "/recruiter_ai_thumb.png",
+    usecase: "Helps recruiters pre-screen applicants in bulk and get defensible shortlist reasons.",
+    working: "Parses candidate input and replays an LLM screening flow that scores role-fit and flags gaps."
+  },
+  {
+    name: "Dock App",
+    desc: "A polished dock/launcher UI demo — an animated macOS-style dock built as a self-contained web app.",
+    url: "https://github.com/mhklogs/dock-app",
+    vercelUrl: "https://dock-app-zeta.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/pocketmint_tracker_thumb.png",
+    usecase: "Demonstrates high-fidelity micro-interaction and animation engineering.",
+    working: "Renders a clip-path/mask dock with spring-like hover magnification and launch affordances."
+  },
+  {
+    name: "Devil Level",
+    desc: "A CSS/HTML/JS showcase page with expressive animations — a canvas for advanced layout and transition techniques.",
+    url: "https://github.com/mhklogs/devil-level",
+    vercelUrl: "https://devil-level-tau.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/crazy_leads_thumb.png",
+    usecase: "Serves as a visual/technical demo of data-driven CSS state and animation craft.",
+    working: "Drives layered DOM state with JS and CSS keyframe systems to produce chained effects."
+  },
+  {
+    name: "WebGL Starter",
+    desc: "A Three.js/WebGL starter scene — a minimal, documented gateway to interactive 3D on the web.",
+    url: "https://github.com/mhklogs/webgl-starter",
+    vercelUrl: "https://webgl-starter.vercel.app",
+    tech: ["Three.js", "Vite", "WebGL"],
+    thumbnail: "/nexus_fs_thumb.png",
+    usecase: "Bootstraps GPU-accelerated 3D demos quickly with a sane render loop and camera rig.",
+    working: "Configures a Three.js renderer with scene, camera, and animation loop inside a Vite scaffold."
+  },
+  {
+    name: "Nimbus AI SaaS Dashboard",
+    desc: "An AI-first SaaS analytics dashboard — a clean next-gen admin surface for metrics, alerts, and AI insights.",
+    url: "https://github.com/mhklogs/nimbus-ai-saas-dashboard",
+    vercelUrl: "https://nimbus-ai-saas-dashboard.vercel.app",
+    tech: ["React", "Vite", "Tailwind CSS", "Charts"],
+    thumbnail: "/nexus_fs_new_thumb.png",
+    usecase: "Gives product teams a modern at-a-glance control surface for business metrics.",
+    working: "Composes dashboard widgets from componentized KPI, chart, and AI-insight cards."
+  },
+  {
+    name: "Primus Leads",
+    desc: "A lead-generation panel with a streamlined capture-and-manage flow for sales operations.",
+    url: "https://github.com/mhklogs/primus-leads",
+    vercelUrl: "https://primus-leads.vercel.app",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    thumbnail: "/primus_leads_thumb.png",
+    usecase: "Centralizes inbound lead capture and follow-up tracking in one panel.",
+    working: "Renders a capture form and a searchable lead list with status-driven pipeline views."
+  },
+  {
+    name: "Viktor Oddy",
+    desc: "A personal/business portfolio website with a distinctive visual identity — a showpiece of bespoke front-end design.",
+    url: "https://github.com/mhklogs/viktor-oddy",
+    vercelUrl: "https://viktor-oddy-taupe.vercel.app",
+    tech: ["React", "Vite", "CSS"],
+    thumbnail: "/getauto_rental_thumb.jpg",
+    usecase: "Showcases individual or agency brand presence with a strong landing experience.",
+    working: "Serves a custom-designed SPA with sectioned content and tailored styling."
+  },
+  {
+    name: "Nexxy CRM — 3D Website",
+    desc: "A 3D-enabled marketing site for Nexxy CRM, blending WebGL visuals with a product narrative.",
+    url: "https://github.com/mhklogs/nexxy-crm-3d-website",
+    vercelUrl: "https://nexxy-crm-3d-website.vercel.app",
+    tech: ["React", "Three.js", "Vite", "Tailwind CSS"],
+    thumbnail: "/ultd_llc_real_estate_thumb.png",
+    usecase: "Positions a CRM product with an immersive, modern landing page.",
+    working: "Combines a Three.js hero with standard marketing sections and CTA flows."
+  },
+  {
+    name: "Nexxy Affiliate Dashboard",
+    desc: "A Next.js affiliate-marketing dashboard for tracking referrals, commissions, and partner activity.",
+    url: "https://github.com/mhklogs/nexxy-affiliate-dashboard",
+    tech: ["Next.js", "React", "Tailwind CSS"],
+    thumbnail: "/referralclose_llc_new_thumb.png",
+    usecase: "Gives program managers a clear view of partner and payout performance.",
+    working: "Implements dashboard screens for referral stats and commission records on the Next.js app router."
+  },
+  {
+    name: "Karobar — SME Accounting Ledger",
+    desc: "An SME accounting ledger tailored for Pakistani small businesses — income, expense, and ledger entry tracking with PKR focus.",
+    url: "https://github.com/mhklogs/karobar-sme-accounting-ledger",
+    vercelUrl: "https://karobar-sme-accounting-ledger.vercel.app",
+    tech: ["React", "Node.js", "Express", "SQLite"],
+    thumbnail: "/pricing_agent_thumb.jpg",
+    usecase: "Simplifies bookkeeping for small merchants with a clear ledger and journal flow.",
+    working: "Stores transactions in a relational store and surfaces ledger summaries and journals in the UI."
+  },
+  {
+    name: "Anamoviles",
+    desc: "A mobile-services agency website template — a go-to-market front for an app-development studio.",
+    url: "https://github.com/mhklogs/anamoviles",
+    vercelUrl: "https://anamoviles-indol.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/pocketmint_tracker_thumb.png",
+    usecase: "Showcases a studio's services, work, and contact path for prospective app clients.",
+    working: "Static multi-section site with service showcases and conversion-oriented sections."
+  },
+  {
+    name: "Blue Material Portfolio",
+    desc: "A Material-design portfolio template — a developer portfolio with a bold, structured materials aesthetic.",
+    url: "https://github.com/mhklogs/blue-material-portfolio",
+    vercelUrl: "https://blue-material-portfolio.vercel.app",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    thumbnail: "/pocketmint_tracker_thumb.jpg",
+    usecase: "Gives developers a ready-made, on-brand portfolio shell.",
+    working: "Renders sections for bio, projects, and contact from componentized React views."
+  },
+  {
+    name: "NexLeed Website",
+    desc: "A brand/agency website template with a polished corporate landing and service sections.",
+    url: "https://github.com/mhklogs/nexleed-website",
+    vercelUrl: "https://nexleed-website.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    thumbnail: "/crazy_leads_thumb.png",
+    usecase: "Presents an agency's offering with a clean, conversion-ready layout.",
+    working: "Static site composed of hero, service, and CTA sections with responsive styling."
+  },
+  {
+    name: "Prometheous",
+    desc: "A Next.js brand landing app — a multi-provider AI assistant shell with Supabase-ready auth and chat flows.",
+    url: "https://github.com/mhklogs/prometheous",
+    tech: ["Next.js", "React", "Supabase", "Tailwind CSS"],
+    thumbnail: "/podcast_agent_thumb.png",
+    usecase: "Bootstraps an AI product landing with real chat and file/suggestion API routes.",
+    working: "Implements auth, chat, files, and suggestions routes behind a modern app-router surface."
+  },
+  {
+    name: "Tritanium Global",
+    desc: "A corporate services website template for a global services brand — enterprise-style sections and contact flow.",
+    url: "https://github.com/mhklogs/tritanium-global",
+    vercelUrl: "https://tritanium-global-psi.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/ultd_llc_real_estate_thumb.png",
+    usecase: "Establishes a credible enterprise web presence for a services company.",
+    working: "Delivers a multi-section corporate layout with service and contact sections."
+  },
+  {
+    name: "Persona Gateway",
+    desc: "A gateway/login UI template — clean authentication-style screens ready for integration.",
+    url: "https://github.com/mhklogs/persona-gateway",
+    vercelUrl: "https://persona-gateway.vercel.app",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    thumbnail: "/cborural_new_thumb.png",
+    usecase: "Speeds up building sign-in, sign-up, and account landing flows.",
+    working: "Provides styled auth view states wired for client-side routing."
+  },
+  {
+    name: "Real-Estate Website Template",
+    desc: "A real-estate listing website template for property showcases and agent browsing.",
+    url: "https://github.com/mhklogs/real-estate-website-template",
+    vercelUrl: "https://real-estate-website-template-sigma.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    thumbnail: "/ultd_llc_real_estate_thumb.png",
+    usecase: "Launches property-list marketing sites quickly with listings and inquiry CTAs.",
+    working: "Static responsive layout with listing grids and contact flows."
+  },
+  {
+    name: "Visat Estate E-Sign",
+    desc: "An e-sign concept landing for estate documents — showcases digital signing UX for property transactions.",
+    url: "https://github.com/mhklogs/visat-estate-e-sign",
+    vercelUrl: "https://visat-estate-e-sign.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/ultd_realestate_thumb.png",
+    usecase: "Demonstrates a modern paperless signing flow for real-estate deals.",
+    working: "Front-end concept presenting document/e-sign interaction and estate branding."
+  },
+  {
+    name: "Yasin Tuck POS",
+    desc: "A point-of-sale / intake demo for a retail-outlet workflow — capture, tally, and checkout in one screen.",
+    url: "https://github.com/mhklogs/yasin-tuck-pos",
+    vercelUrl: "https://yasin-tuck-pos.vercel.app",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/pocketmint_tracker_thumb.jpg",
+    usecase: "Provides a lightweight POS surface for small retailers.",
+    working: "Implements item capture, line-total calculations, and checkout state in the browser."
+  },
+  {
+    name: "ReferralSites — Delivery Bundle",
+    desc: "A delivery-handoff bundle of multi-static referral sites, organized and archived for seamless client turnover.",
+    url: "https://github.com/mhklogs/referral-sites-final",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/referralclose_llc_new_thumb.png",
+    usecase: "Packages multiple static sites and their assets into one clean, handoff-ready repository.",
+    working: "Represents an archived multi-site delivery with versioned assets and handoff notes."
+  },
+  {
+    name: "Vibewire Chat App",
+    desc: "A community chat web app — a real-time conversation surface backed by a Node server, now deployed as a static Vite build.",
+    url: "https://github.com/mhklogs/vibewire-chat-app",
+    vercelUrl: "https://vibewire-chat-app.vercel.app",
+    tech: ["Vite", "React", "Node.js", "WebSocket"],
+    thumbnail: "/auton_ai_final_thumb.png",
+    usecase: "Powers community discussion with instant message delivery and room semantics.",
+    working: "Front-end streams messages over a Node socket layer while the static UI builds on Vite."
+  },
+  {
+    name: "Global Path — Visa Guide Agent",
+    desc: "A delivery bundle for a visa-guide AI agent — research logic and agent flow packaged for handoff.",
+    url: "https://github.com/mhklogs/global-path-visa-guide-agent",
+    tech: ["Python", "Agent Scripts", "Notebooks"],
+    thumbnail: "/getauto_rental_thumb.jpg",
+    usecase: "Reusable visa-guidance reasoning agent for quick document-handoff projects.",
+    working: "Organizes agent logic and reference data into a versioned, documented archive."
+  },
+  {
+    name: "Convigas — Admin Platform",
+    desc: "A delivery bundle for an admin platform plus search app — organized into clean app directories for client handoff.",
+    url: "https://github.com/mhklogs/convigas",
+    tech: ["HTML", "CSS", "JavaScript"],
+    thumbnail: "/homefix_os_thumb.png",
+    usecase: "Hands over an administration platform and its search companion in one tidy repository.",
+    working: "Divides the bundle into admin-platform and search-app modules with shared documentation."
   }
 ];
 
