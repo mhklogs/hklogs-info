@@ -90,3 +90,6 @@ out/
 # vercel
 .vercel
 .env*
+
+# agent memory
+.agent-memory/
