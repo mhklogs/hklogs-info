@@ -172,7 +172,11 @@ export default function GithubProjectsSection({
                 <div className="relative aspect-video overflow-hidden bg-neutral-950 border border-white/10 flex items-center justify-center">
                   {project.thumbnail ? (
                     <img 
-                      src={project.thumbnail} 
+                      src={project.thumbnail}
+                      loading="lazy"
+                      decoding="async"
+                      width={1280}
+                      height={800} 
                       alt={project.name}
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                       onError={(e) => {
@@ -296,7 +300,11 @@ export default function GithubProjectsSection({
                   <div className="aspect-video bg-neutral-950 border-b border-neutral-800 overflow-hidden relative">
                     {project.thumbnail ? (
                       <img 
-                        src={project.thumbnail} 
+                        src={project.thumbnail}
+                        loading="lazy"
+                        decoding="async"
+                        width={1280}
+                        height={800} 
                         alt={project.name} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         onError={(e) => {
@@ -389,6 +397,10 @@ export default function GithubProjectsSection({
                   <img 
                     src={selectedProject.thumbnail} 
                     alt={selectedProject.name}
+                    loading="lazy"
+                    decoding="async"
+                    width={1280}
+                    height={800}
                     className="w-full h-full object-cover"
                   />
                 ) : (

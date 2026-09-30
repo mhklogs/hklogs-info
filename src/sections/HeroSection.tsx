@@ -41,7 +41,11 @@ export default function HeroSection({ onExploreProjects }: HeroSectionProps) {
          ----------------------------------------------------------------- */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[88%] max-h-[85vh] z-10 pointer-events-none flex items-end justify-center min-w-[280px]">
         <img
-          src="/ad5b9713-018f-43a6-a4c4-39ef586bba14_edit_867989541613908-removebg-preview.png"
+          src="/ad5b9713-018f-43a6-a4c4-39ef586bba14_edit_867989541613908-removebg-preview.webp"
+          width={424}
+          height={588}
+          fetchPriority="high"
+          decoding="async"
           alt="Hassaan Abdullah Kiyani"
           className="h-full w-auto object-contain object-bottom filter contrast-[1.05] brightness-[0.98] drop-shadow-2xl"
           style={{

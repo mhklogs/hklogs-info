@@ -394,7 +394,7 @@ export default function ChatbotSection({ geminiKey, isOpen, onClose }: ChatbotSe
                   <path d="M40 78 Q50 84 60 78" stroke="currentColor" strokeWidth="4" fill="none" />
                 </svg>
               ) : (
-                <img src="/hassaan-portrait.png" alt="Hassaan Portrait" className="w-full h-full object-cover" />
+                <img src="/hassaan-portrait.webp" loading="lazy" decoding="async" width={424} height={588} alt="Hassaan Portrait" className="w-full h-full object-cover" />
               )}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-all">
                 <RefreshCw className="w-3 h-3 text-white animate-spin" />

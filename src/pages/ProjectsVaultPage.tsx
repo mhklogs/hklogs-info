@@ -216,7 +216,11 @@ export default function ProjectsVaultPage({ onBack }: ProjectsVaultPageProps) {
                 <div className="aspect-video bg-neutral-950 border-b border-neutral-800 overflow-hidden relative">
                   {project.thumbnail ? (
                     <img 
-                      src={project.thumbnail} 
+                      src={project.thumbnail}
+                      loading="lazy"
+                      decoding="async"
+                      width={1280}
+                      height={800} 
                       alt={project.name} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
