@@ -9,7 +9,6 @@ jobs:
   t:
     if: ${{ vars.VERCEL_DEPLOY_ENABLED == 'true' }}
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - run: echo hello
       - name: Skipped
