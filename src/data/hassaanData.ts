@@ -194,14 +194,34 @@ export const staticProjects: LocalProject[] = [
     working: "Orchestrates multiple Gemini 2.x agent nodes behind a Vite SPA, each bound to tool sources (web, files, code) with role-scoped task handlers and streaming outputs."
   },
   {
-    name: "FixIt Home",
-    desc: "The FixIt Home Services marketplace — homeowners post a job, watch verified pros bid live with price + ETA, and pay through Stripe escrow only when the work is done. Worker side is the ProFixit app with one-tap bidding, a flat $0.30-per-bid wallet, and 96–97% instant payouts.",
-    url: "https://github.com/mhklogs/profixit-app",
-    vercelUrl: "https://fixit-rouge.vercel.app",
-    tech: ["Next.js", "React Native", "Expo", "Supabase", "Stripe", "Tailwind CSS"],
+    name: "FixIt Home — Marketplace Website",
+    desc: "The FixIt Home Services marketplace web app — homeowners post a job, watch verified pros bid live with price and ETA, and pay through Stripe escrow only when the work is done. Twenty trades, live bid comparison, and an admin portal.",
+    url: "https://github.com/mhklogs/fixit-landing",
+    vercelUrl: "https://fixit-web-rom.vercel.app",
+    tech: ["Next.js", "TypeScript", "Supabase", "Stripe", "Tailwind CSS"],
     thumbnail: "/thumbs/fixit-home.webp",
     usecase: "Powers the self-serve marketplace lane: named-your-price bidding, live ETA quotes, escrow payments, and photo-verified completion payouts for home services.",
-    working: "Shares a turbo monorepo across web, mobile (FixIt + ProFixit), admin and a shared packages workspace; syncs the instant-quote engine, chat, and bid wallet across every surface."
+    working: "Split out of the old profixit-app monorepo into a standalone Next.js repo with shared types vendored in, so it builds and deploys on its own; ships the white-and-orange landing redesign, sitemap, robots and Open Graph card."
+  },
+  {
+    name: "FixIt Home — Homeowner Android App",
+    desc: "The homeowner side of FixIt as a standalone Android app. Post a repair job, watch offers arrive live with price and arrival time, compare them side by side, and confirm completion to release payment.",
+    url: "https://github.com/mhklogs/fixit-home-android",
+    vercelUrl: "https://github.com/mhklogs/fixit-home-android/releases/latest/download/FixItHome.apk",
+    tech: ["React Native", "Expo", "TypeScript", "Supabase"],
+    thumbnail: "/thumbs/fixit-home-android.webp",
+    usecase: "Gives homeowners a phone-first way to raise a job and accept a bid without calling round multiple companies.",
+    working: "Own repo under com.fixit.app with the homeowner role pinned at build time; GitHub Actions builds the release APK and publishes it to the v1.0.0 release that the website's download button links to."
+  },
+  {
+    name: "ProFixit — Contractor Android App",
+    desc: "The contractor side of FixIt as a standalone Android app. Browse nearby jobs, send a one-tap offer with your own price and ETA, and get paid once the homeowner signs the work off.",
+    url: "https://github.com/mhklogs/profixit-android",
+    vercelUrl: "https://github.com/mhklogs/profixit-android/releases/latest/download/ProFixit.apk",
+    tech: ["React Native", "Expo", "TypeScript", "Supabase"],
+    thumbnail: "/thumbs/profixit-android.webp",
+    usecase: "Lets tradespeople pick up work by bidding on it instead of buying leads or paying for advertising.",
+    working: "Own repo under com.profixit.app with the contractor role pinned at build time; prepaid credit wallet at $0.30 per offer and 96–97% payout via Stripe on completion."
   },
   {
     name: "HomeFix OS",
@@ -834,8 +854,8 @@ SCOPE RULES:
 PORTFOLIO FACTS YOU CAN SHARE:
 - Hassaan is an AI Engineer & SQA Specialist in his final year of BS Software Engineering at UIIT PMAS-Arid Agriculture University, Pakistan. He runs Recruiter AI.
 - Specialties: Software Quality Assurance, automated & manual testing, agentic AI systems, and GenAI/LLM integration.
-- Stats: 70+ GitHub repositories (29 public · 41 private), 50+ QA audits & builds, 4+ Medium publications, 4+ years dev track.
-- Key projects: Revenue Orbit Marketing (revenueorbitmarketing.com), Accident Care Helpline (accidentcarehelpline.com — personal-injury lead gen with TrustedForm), ISHAARA (bi-directional sign language translator), CBO-RuralWSD (offline-first PWA for rural water billing), ReferralClose LLC & home.referralclose, ai-recruitment-auditor (Gemini resume screening), sentient-ai-multimodal-hub, Bridgebot code migrator, Relevnt (legal compliance search), PocketMint, Prioriti, geoengineai, AI Podcast Agent (LangGraph), optimared pricing agent, Haze Agent Suite (agentic AI control room), FixIt Home & HomeFix OS, AppointmentBookingApp, GetAuto, and more.
+- Stats: 70+ GitHub repositories (31 public · 41 private), 50+ QA audits & builds, 4+ Medium publications, 4+ years dev track.
+- Key projects: Revenue Orbit Marketing (revenueorbitmarketing.com), Accident Care Helpline (accidentcarehelpline.com — personal-injury lead gen with TrustedForm), ISHAARA (bi-directional sign language translator), CBO-RuralWSD (offline-first PWA for rural water billing), ReferralClose LLC & home.referralclose, ai-recruitment-auditor (Gemini resume screening), sentient-ai-multimodal-hub, Bridgebot code migrator, Relevnt (legal compliance search), PocketMint, Prioriti, geoengineai, AI Podcast Agent (LangGraph), optimared pricing agent, Haze Agent Suite (agentic AI control room), FixIt Home (split into three repos: fixit-landing website at fixit-web-rom.vercel.app, fixit-home-android homeowner APK, profixit-android contractor APK) & HomeFix OS, AppointmentBookingApp, GetAuto, and more.
 - Medium publications cover: automating podcasts with Gemini & LangGraph, algorithmic exam seating, shifting SQA from assertions to inference with Vertex AI, and enforcing feature parity.
 - Tools & stack: Python, TypeScript, Java, C++, Kotlin, React, Next.js, Gemini/Vertex AI, LangGraph, LangChain, TensorFlow, OpenCV, Supabase, Firebase, PostgreSQL, Tailwind.
 
