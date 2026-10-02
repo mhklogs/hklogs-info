@@ -7,6 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo hello
-      - name: Skipped
-        if: ${{ secrets.VERCEL_TOKEN == '' }}
-        run: echo "no token"
+      - name: Check token
+        id: check
+        env:
+          TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Would deploy
+        if: steps.check.outputs.available == 'true'
+        run: echo deploying
+      - name: Explain skipped
+        if: steps.check.outputs.available != 'true'
+        run: echo "no token, skipped"
